@@ -70,24 +70,20 @@ Edit
 streamlit run streamlit_app.py
 Open your browser at http://localhost:8501 to interact with the churn predictor.
 
-📂 Project Structure
-bash
-Copy
-Edit
 telecom-churn-predictor/
-├── data/
-│   ├── raw/                 # Original CSVs
-│   └── processed/           # Cleaned and feature data
-├── models/                  # Serialized ML models
-├── outputs/                 # Evaluation plots, reports
-├── data_processing.py       # Load and clean raw data
-├── feature_engineering.py   # Create features for modeling
-├── modeling.py              # Train and save the best model
-├── evaluation.py            # Compute and print metrics
-├── main.py                  # Orchestrator for pipeline stages
-├── streamlit_app.py         # Frontend demo app
-├── utils.py                 # Shared helper functions
-└── requirements.txt         # Project dependencies
+├── data/                  # Project data
+│   ├── raw/               # Original CSV files
+│   └── processed/         # Cleaned & feature datasets
+├── models/                # Saved ML model artifacts
+├── outputs/               # Reports & plots from evaluation
+├── data_processing.py     # Load & clean raw data
+├── feature_engineering.py # Generate modeling features
+├── modeling.py            # Train & serialize the best model
+├── evaluation.py          # Compute & display metrics
+├── main.py                # CLI pipeline orchestrator
+├── streamlit_app.py       # Streamlit front-end app
+├── utils.py               # Shared helper functions
+└── requirements.txt       # Python dependencies
 📈 Results
 After running the full pipeline, the Random Forest model achieved:
 
