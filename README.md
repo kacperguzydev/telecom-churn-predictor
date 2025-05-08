@@ -23,9 +23,6 @@ A complete end-to-end machine learning pipeline for predicting customer churn in
    cd telecom-churn-predictor
 Create & activate a virtual environment
 
-bash
-Copy
-Edit
 python3 -m venv .venv
 source .venv/bin/activate   # on Windows: .venv\Scripts\activate
 Install dependencies
@@ -36,9 +33,6 @@ Edit
 pip install -r requirements.txt
 Prepare data folders
 
-bash
-Copy
-Edit
 mkdir -p data/raw data/processed models outputs
 Download the dataset
 Place WA_Fn-UseC_-Telco-Customer-Churn.csv into data/raw/.
@@ -46,9 +40,6 @@ Place WA_Fn-UseC_-Telco-Customer-Churn.csv into data/raw/.
 ▶️ Usage
 Run each stage individually, or all stages at once:
 
-bash
-Copy
-Edit
 # 1. Clean & preprocess raw data
 python main.py preprocess
 
@@ -64,15 +55,13 @@ python main.py evaluate
 # 5. Run the full pipeline end-to-end
 python main.py all
 Launch the Streamlit demo
-bash
-Copy
-Edit
+
 streamlit run streamlit_app.py
 Open your browser at http://localhost:8501 to interact with the churn predictor.
 
 ## 📂 Project Structure
 
-<!-- blank line above this -->
+
 
 ```plaintext
 telecom-churn-predictor/
@@ -89,7 +78,7 @@ telecom-churn-predictor/
 ├── streamlit_app.py       # Streamlit front-end app
 ├── utils.py               # Shared helper functions
 └── requirements.txt       # Python dependencies
-<!-- blank line below this -->
+
 📈 Results
 After running the full pipeline, the Random Forest model achieved:
 
